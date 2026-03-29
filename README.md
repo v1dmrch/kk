@@ -1,11 +1,9 @@
 # Краснодарский край
 
 <ul>
-{% for member in site.data.members %}
+{% for city in site.data.cities %}
   <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
-    </a>
+      {{ city.name }}, {{ city.population }}
   </li>
 {% endfor %}
 </ul>
